@@ -69,6 +69,11 @@ function loadone_bill($id){
     $bill = pdo_query_one($sql);
     return $bill;
 }
+function load_all_bill($id){
+    $sql = "select * from bill where iduser=".$id;
+    $dsbill = pdo_query($sql);
+    return sizeof($dsbill);
+}
 function loadall_cart($id){
     $sql = "select * from cart where idbill=".$id;
     $bill = pdo_query($sql);

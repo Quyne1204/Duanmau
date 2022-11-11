@@ -161,7 +161,7 @@
                 include 'view/giohang/billcomfirm.php';
                 break;
             case 'mybill':
-                $dsbill = loadall_bill($_SESSION['user']['id_user']);
+                $dsbill = load_all_bill($_SESSION['user']['id_user']);
                 include 'view/giohang/mybill.php';
                 break;
             case 'gioithieu':
